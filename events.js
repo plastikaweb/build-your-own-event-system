@@ -43,17 +43,17 @@ EventTracker.prototype.trigger = function(eventName, param) {
     }
 };
 
-function purchase(item) { console.log( 'purchasing ' + item); }
-function celebrate() { console.log( this.name + ' says birthday parties are awesome!' ); }
-
-var nephewParties = new EventTracker( 'nephews');
-var richard = new EventTracker( 'Richard' );
-
-nephewParties.on( 'mainEvent', purchase );
-richard.on( 'mainEvent', celebrate );
-richard.on( 'mainEvent', purchase );
-nephewParties.notify( richard, 'mainEvent' );
-
-nephewParties.trigger( 'mainEvent', 'ice cream' );
-richard.trigger( 'mainEvent', 'sudden' );
-richard.trigger( 'mainEvent', 'hate' );
+// function purchase(item) { console.log( 'purchasing ' + item); }
+// function celebrate() { console.log( this.name + ' says birthday parties are awesome!' ); }
+//
+// var nephewParties = new EventTracker( 'nephews');
+// var richard = new EventTracker( 'Richard' );
+//
+// nephewParties.on( 'mainEvent', purchase );
+// richard.on( 'mainEvent', celebrate );
+// richard.on( 'mainEvent', purchase );
+// nephewParties.notify( richard, 'mainEvent' );
+//
+// nephewParties.trigger( 'mainEvent', 'ice cream' );
+// richard.trigger( 'mainEvent', 'sudden' );
+// richard.trigger( 'mainEvent', 'hate' );
